@@ -42,6 +42,7 @@ board.on("ready", function() {
             client.publish('alimentacao', 'Alimentando PET');
         } else {
             console.log("Pote cheio**************");
+            client.publish('alimentacao', 'Alimentação concluída!');
         }
     });
 
